@@ -33,9 +33,9 @@ var aqiData = [
   var _temp = "";
 
   //  过滤出大于60的
-  for(x in aqiData){
-      if(aqiData[x][1] > 60 ){
-         arr.push(aqiData[x]);
+  for(var i=0; i<aqiData.length; i++){
+      if(aqiData[i][1] > 60 ){
+         arr.push(aqiData[i]);
       };
   }
 
