@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2：零基础HTML及CSS编码（一）</title>
+	<link rel="stylesheet" type="text/css" href="css/task2.css">
+</head>
+<body>
+	<!--
+	任务目的:
+	针对设计稿样式进行合理的HTML架构，包括以下但不限于：
+		1. 掌握常用HTML标签的含义、用法
+		2. 能够基于设计稿来合理规划HTML文档结构
+		3. 理解语义化，合理地使用HTML标签来构建页面
+	掌握基本的CSS编码，包括以下但不限于：
+		1. 了解CSS的定义、概念、发展简史
+		2. 掌握CSS选择器的含义和用法
+		3. 实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式
+	-->
+	<!--导航-->
+	<div class="nav">
+		<span>网站一级标题</span>
+		<ul>
+			<li class="nav1"><span>导航链接一</span>></li>
+			<li class="nav2"><span>导航链接二</span>></li>
+			<li class="nav3"><span>导航链接三</span>></li>
+			<li class="nav4"><span>导航链接四</span>></li>
+		</ul>
+	</div>
+	<div class="artical">
+		<!-- 文章一 -->
+		<div class="artical-first">
+			<h1>文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<h5>文章作者 文章发表时间</h5>
+			<p class="p-first">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p class="p-second">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p class="p-third">这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有一个粗体字</b>这是一个很长很长的段落这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			<img src="imgs/pig_green.png">
+			<p class="p-fourth">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p class="p-fifth">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p class="p-sixth">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有一个粗体字</b>这是一个很长很长的段落这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		</div>
+		<!-- 文章二 -->
+		<div class="artical-second">
+			<h1>另一篇文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<h5>文章作者 文章发表时间</h5>
+			<p class="p-first">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p class="p-second">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p class="p-third">这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			<img src="imgs/pig_green.png">
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</div>
+		<!-- 文章三 -->
+		<div class="artical-third">
+			<h1>图片</h1>
+			<dl>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+				<dd><div><p>好看的图片</p><img src="imgs/pig_green.png"></div></dd>
+			</dl>		
+		</div>
+		<!--结尾文章 -->
+		<div class="artical-last">
+			<h1>最后一篇文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<p>文章作者 文章发表时间</p>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+			<table border="1">
+				<thead>
+					<tr>
+						<td>表头</td>
+						<td>表头</td>
+						<td>表头</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#">操作</a></td>
+					</tr>
+					<tr>
+						<td>总计</td>
+						<td colspan="2">1000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--申请栏-->
+	<div class="artical-">
+		<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+		<h2>侧栏注册窗口标题</h2>
+		<div>
+			<p>请输入邮箱地址：<input placeholder="这是一个文本输入框"></input></p>
+			<p>邮箱地址请按要求格式输入</p>
+		</div>
+		<div>
+			<p>请输入密码：<input placeholder="这是一个文本输入框"></input>请重复输入密码：<input placeholder="这是一个文本输入框"></input></p>
+			<p>密码请为6-16位英文数字</p>
+		</div>
+		<div>
+			<label>性别：<input type="radio" value="男" name="sex" checked>男</input><input type="radio" value="女" name="sex">女</input></label>
+			<label>城市：
+				<select>
+					<option selected>北京</option>
+					<option>河北</option>
+					<option>河南</option>
+					<option>河西</option>
+				</select>
+			</label>
+			<label>爱好：<input type="checkbox" value="运动" name="habitt">运动</input><input type="checkbox" value="艺术" name="habitt">艺术</input><input type="checkbox" value="科学" name="habitt">科学</input></label>
+			<label>
+				个人描述：<textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+			</label>
+			<input type="button" value="确认提交" ></input>
+		</div>
+	</div>
+	<div>版权所有&copy;</div>
+</body>
+</html>
+</body>
+</html>

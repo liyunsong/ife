@@ -1,0 +1,85 @@
+/*
+ * box-shadow的阴影为达到效果
+*/
+body{
+	margin:0;
+	padding:0;
+	background: #E6E6E6;
+}
+
+.nav{
+	position: relative;
+	padding: 10px 15px;
+	min-height: 45px;
+	background: #333333;
+}
+.nav span{
+	position: absolute;
+	display:inline-block;
+}
+.nav ul{
+	position: absolute;
+	right:15px;
+	font-size:15px;
+}
+.nav ul li{
+	position: absolute;
+	width: 80px;
+}
+.nav li.nav1{
+	right: 310px;
+}
+.nav li.nav2{
+	right: 210px;
+}
+.nav li.nav3{
+	right: 110px;
+}
+.nav li.nav4{
+	right: 10px;
+}
+.nav li.nav1 > span, .nav li.nav2 > span, .nav li.nav3 > span{
+	color: #fff;
+}
+.nav li.nav4 > span{
+	color:#B2B2B2;	
+}
+/*artical*/
+.artical{
+	margin: 5px auto;
+}
+.artical-first, .artical-second, .artical-third, .artical-last{
+	margin: 30px auto 0 auto;
+	padding: 20px 20px;
+	width: 94%;
+	background: #fff;
+	box-shadow: 1px 1px 10px #000;
+}
+.artical h2{
+	color: #898989;
+}
+.artical h5{
+	color: #B9B9B9;
+}
+.artical p{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	line-height: 25px;
+}
+.artical .p-first, .artical .p-fourth{
+	text-indent:2em;
+}
+.artical-second ul{
+	list-style:none;
+}
+.artical-third dd > div{
+	display: inline-table;
+	margin: 0 0 20px 0;
+	padding:10px;
+	border: 1px solid #DBDBDB;
+}
+.artical-third dd  p{
+	margin:0 auto;
+	text-align: center;
+}
