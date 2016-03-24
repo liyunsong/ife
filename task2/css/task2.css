@@ -48,12 +48,12 @@ body{
 .artical{
 	margin: 5px auto;
 }
-.artical-first, .artical-second, .artical-third, .artical-last{
+.artical-first, .artical-second, .artical-third, .artical-last, .artical-apply{
 	margin: 30px auto 0 auto;
 	padding: 20px 20px;
 	width: 94%;
 	background: #fff;
-	box-shadow: 1px 1px 10px #000;
+	box-shadow: 2px 2px 0px #BDB9B9;
 }
 .artical h2{
 	color: #898989;
@@ -82,4 +82,22 @@ body{
 .artical-third dd  p{
 	margin:0 auto;
 	text-align: center;
+}
+.artical-last table{
+	width:100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #D2D2D2;
+}
+.artical-last thead{
+	color: #fff;
+	background: #2B2927;
+}
+.artical-last tfoot{
+	background: #CECED0;
+}
+.artical-last td, .artical-last th{
+	padding: 5px;
+	border: 1px solid #D2D2D2;
+	font-weight: bold;
 }
