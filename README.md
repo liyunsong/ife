@@ -1,4 +1,4 @@
 # ife
 百度前端技术学院任务
 
-## @若男 明天我把刚哥也拉进来
+[百度任务地址](http://ife.baidu.com/task/all)
