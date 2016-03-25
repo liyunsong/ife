@@ -100,6 +100,7 @@ body{
 	padding: 5px;
 	border: 1px solid #D2D2D2;
 	font-weight: bold;
+<<<<<<< HEAD
 }
 .artical-apply h1{
 	padding-left: 5px;
@@ -144,4 +145,6 @@ div.footer{
 	text-align: center;
 	color: #fff;
 	background: #000;
+=======
+>>>>>>> origin/gh-pages
 }
