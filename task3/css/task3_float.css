@@ -1,0 +1,45 @@
+body, div, span{
+	margin: 0;
+	padding:20px;
+}
+.wrap{
+	float: left;
+	margin: 20px;
+	min-width: 700px;
+	border: 1px solid #999;
+	background: #eee;
+}
+.wrap > div{
+	border: 1px solid #999;
+	background: #fff;
+}
+.wrap-left{
+	float: left;
+	width: 200px;
+}
+.wrap-left-logo{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	vertical-align: top;
+	background: #fff url("../imgs/logo.png");
+}
+.wrap-left > img{
+	width: 80px;
+	height: 80px;
+}
+.wrap-left-name{
+	margin: 0 auto;
+	width: 20px;
+	vertical-align: top;
+}
+.wrap-content{
+    margin: 0 145px 0 255px;
+}
+.wrap-right{
+	float: right;
+	padding: 10px 0;
+}
+.wrap-right > div{
+	padding: 10px 20px;
+}

@@ -48,12 +48,12 @@ body{
 .artical{
 	margin: 5px auto;
 }
-.artical-first, .artical-second, .artical-third, .artical-last{
+.artical-first, .artical-second, .artical-third, .artical-last, .artical-apply{
 	margin: 30px auto 0 auto;
 	padding: 20px 20px;
 	width: 94%;
 	background: #fff;
-	box-shadow: 1px 1px 10px #000;
+	box-shadow: 2px 2px 0px #BDB9B9;
 }
 .artical h2{
 	color: #898989;
@@ -82,4 +82,66 @@ body{
 .artical-third dd  p{
 	margin:0 auto;
 	text-align: center;
+}
+.artical-last table{
+	width:100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #D2D2D2;
+}
+.artical-last thead{
+	color: #fff;
+	background: #2B2927;
+}
+.artical-last tfoot{
+	background: #CECED0;
+}
+.artical-last td, .artical-last th{
+	padding: 5px;
+	border: 1px solid #D2D2D2;
+	font-weight: bold;
+}
+.artical-apply h1{
+	padding-left: 5px;
+	border-left: 4px solid #CDCDCD;
+}
+.artical-apply .apply-content{
+	margin: 0 0 15px 0;
+	padding-left: 25%;
+}
+.artical-apply span{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 15px;
+}
+.artical-apply .apply-left{
+	width:110px;
+	text-align: right;
+}
+.artical-apply .apply-right{
+	margin-left: 20px;
+	width: 80%;
+}
+.artical-apply .apply-right>p{
+	padding:0;
+}
+.apply-right > textarea{
+	width: 100%;
+	height:150px;
+}
+.artical-apply input[type=button]{
+	padding: 10px 0;
+	width:100%;
+	border: 1px solid;
+	border-radius: 10px;
+	color: #fff;
+	background: #3355D0;
+}
+
+div.footer{
+	height: 50px;
+	padding: 20px 0 0 0;
+	text-align: center;
+	color: #fff;
+	background: #000;
 }

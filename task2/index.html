@@ -76,14 +76,14 @@
 		<div class="artical-last">
 			<h1>最后一篇文章一级标题</h1>
 			<h2>文章二级标题</h2>
-			<p>文章作者 文章发表时间</p>
+			<h5>文章作者 文章发表时间</h5>
 			<ol>
 				<li>排名1</li>
 				<li>排名2</li>
 				<li>排名3</li>
 			</ol>
 			<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-			<table border="1">
+			<table>
 				<thead>
 					<tr>
 						<td>表头</td>
@@ -112,44 +112,67 @@
 						<td>表内容单元格</td>
 						<td><a href="#">操作</a></td>
 					</tr>
+				</tbody>
+				<tfoot>
 					<tr>
 						<td>总计</td>
 						<td colspan="2">1000</td>
 					</tr>
-				</tbody>
+				</tfoot>
 			</table>
 		</div>
 	</div>
 	<!--申请栏-->
-	<div class="artical-">
+	<div class="artical-apply">
 		<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-		<h2>侧栏注册窗口标题</h2>
-		<div>
-			<p>请输入邮箱地址：<input placeholder="这是一个文本输入框"></input></p>
-			<p>邮箱地址请按要求格式输入</p>
+		<div class="apply-content">
+			<span class="apply-left">请输入邮箱地址</span>
+			<span class="apply-right">
+				<input placeholder="这是一个文本输入框"></input>
+				<p>邮箱地址请按要求格式输入</p>
+			</span>
 		</div>
-		<div>
-			<p>请输入密码：<input placeholder="这是一个文本输入框"></input>请重复输入密码：<input placeholder="这是一个文本输入框"></input></p>
-			<p>密码请为6-16位英文数字</p>
+		<div class="apply-content">
+			<span class="apply-left">请输入密码</span>
+			<span class="apply-right"><input type="password" value="12345678" placeholder="这是一个文本输入框"></input></span>
 		</div>
-		<div>
-			<label>性别：<input type="radio" value="男" name="sex" checked>男</input><input type="radio" value="女" name="sex">女</input></label>
-			<label>城市：
+		<div class="apply-content">
+			<span class="apply-left">请重复输入密码</span>
+			<span class="apply-right">
+				<input type="password" value="12345678" placeholder="这是一个文本输入框"></input>
+				<p>密码请为6-16位英文数字</p>
+			</span>
+		</div>
+		<div class="apply-content">
+			<span class="apply-left">性别</span>
+			<span class="apply-right"><input type="radio" value="男" name="sex" checked>男</input><input type="radio" value="女" name="sex">女</input></span>
+		</div>
+		<div class="apply-content">
+			<span class="apply-left">城市</span>
+			<span class="apply-right">
 				<select>
 					<option selected>北京</option>
 					<option>河北</option>
 					<option>河南</option>
 					<option>河西</option>
 				</select>
-			</label>
-			<label>爱好：<input type="checkbox" value="运动" name="habitt">运动</input><input type="checkbox" value="艺术" name="habitt">艺术</input><input type="checkbox" value="科学" name="habitt">科学</input></label>
-			<label>
-				个人描述：<textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
-			</label>
+			</span>
+		</div>
+		<div class="apply-content">	
+			<span class="apply-left">爱好</span>
+			<span class="apply-right"><input type="checkbox" value="运动" name="habitt">运动</input><input type="checkbox" value="艺术" name="habitt">艺术</input><input type="checkbox" value="科学" name="habitt">科学</input></span>
+		</div>
+		<div class="apply-content">
+			<span class="apply-left">个人描述</span>
+			<span class="apply-right">
+				<textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+			</span>
+		</div>
+		<div>
 			<input type="button" value="确认提交" ></input>
 		</div>
 	</div>
-	<div>版权所有&copy;</div>
+	<div class="footer">版权所有&copy;</div>
 </body>
 </html>
 </body>
