@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>吃货小组任务列表</title>
+    <style media="screen">
+        body{margin: 0;background: #252830;text-align: center;font-size: 62.5%}
+        h1{font-size: 1.4rem;color: #cfd2da;}
+        p{max-width: 670px;text-align: right;margin: 0 auto 30px;padding:0 20px;color: #2e71ce;font-size: .8rem}
+        .task-wrap{display: inline-block; max-width: 370px;min-width: 280px; margin: 18px;border: 1px solid #434857;border-radius: 3px;vertical-align: top;}
+        h2, a{display: block;padding: 10px 15px;color: #cfd2da;font-size: 1.1rem;cursor: pointer;}
+        h2{text-align: left;font-weight: 900;cursor: default;}
+        a{border-top: 1px solid #434857;text-align: left;transition: .3s;}
+        a:hover{background: #434857;}
+        a span{float: right;color: #999;font-size: .8rem}
+        a span::before{content: "——";}
+    </style>
 </head>
 <body>
-百度前端技术学院-任务
+    <h1>百度前端技术学院-任务</h1>
+    <p>Team：李云松 王春岩 王停 郑倩倩 李若男</p>
+
+    <div class="task-wrap">
+        <h2>第一阶段任务</h2>
+        <a href="task1/task1.html">task1<span>李若男</span></a>
+        <a href="task2/index.html">task2<span>李若男</span></a>
+    </div>
+
+    <div class="task-wrap">
+        <h2>第二阶段任务</h2>
+        <a href="task13">task13<span>李云松</span></a>
+        <a href="task14">task14<span>李云松</span></a>
+    </div>
+
 </body>
 </html>

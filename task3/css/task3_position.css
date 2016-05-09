@@ -1,0 +1,41 @@
+body, div, span{
+	margin: 0;
+	padding: 20px;
+}
+.wrap{
+	position: relative;
+	min-width: 600px;
+	border: 1px solid #999;
+	background: #eee;
+}
+.wrap img{
+	width: 80px;
+	height: 80px;
+}
+.wrap > div{
+	vertical-align: top;
+	border: 1px solid #eee;
+	background: #fff;
+}
+.wrap-left{
+	position: absolute;
+	width: 200px;
+}
+.wrap-left span{
+	padding: 0 20px;
+	vertical-align: top;
+}
+
+.wrap-right{
+	position: absolute;
+	right: 20px;
+	width: 120px;
+	padding: 10px 0;
+}
+.wrap-right > div{
+	padding: 10px 20px;
+}
+.wrap-content{
+	margin-left: 255px;
+	margin-right: 145px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task3：三栏式布局 float</title>
+	<link rel="stylesheet" type="text/css" href="css/task3_float.css">
+</head>
+<body>
+	<!-- 
+	思路：
+		使用float，使得左右两部分向两边靠拢
+		使用margin，使得中间部分自动适应
+	????:
+		1. 如果按照左中右
+		2. 分别使用float： left，left，right
+		3. 会显示阶梯状的
+	-->
+	<div class="wrap">
+		<div class="wrap-left">
+			<!--<span class="wrap-left-logo"></span>-->
+			<img src="imgs/logo.png">
+			<span class="wrap-left-name">团队名称</span>
+		</div>
+		<div class="wrap-right">
+			<div><img src="imgs/logo.png"></div>
+			<div><img src="imgs/logo.png"></div>
+			<div><img src="imgs/logo.png"></div>
+			<div><img src="imgs/logo.png"></div>
+		</div>
+		<div class="wrap-content">
+			<p>Our Team Instroduce</p>
+			<p>Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. </p>
+			<p>Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. </p>
+			<p>Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. Our team is great. </p>
+		</div>
+	</div>
+</body>
+</html>
