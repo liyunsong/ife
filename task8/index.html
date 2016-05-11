@@ -5,15 +5,15 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="../CSS/task1_8_1.css" media="">
     <style type="text/css">
-    @media screen and (min-width: 769px) {
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
-            margin: 0px 10px;
-        }
-        div {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        margin: 0px 10px;
+    }
+    div {
             float: left;
             border: solid 1px #999;
             background: #eee;
@@ -23,6 +23,17 @@
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
         }
+    /*
+        了解12栏布局之后才恍然大悟。
+        12栏布局（把可用宽度平均划分为12等份，则一个栏的单位是总宽度/12）
+        假设需要响应式布局的宽度为W，总剩余宽度：W2（间距：margin等）
+        如果按比例计算一个占有一栏DIV的宽度则是：W/12-W2/12
+        这个页面布局中W=100%；W2=x*20px;
+        x为一行中有几个DIV；20px 是DIV的margin：为10px,body的margin为10px;
+        开始工作了。
+    */
+    @media screen and (min-width: 769px) {
+        
         .div1 {
             width: calc(33.33% - 20px);
             width: -moz-calc(33.33% - 20px);
@@ -81,23 +92,7 @@
     }
     
     @media screen and (max-width: 769px) {
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
-            margin: 0px 10px;
-        }
-        div {
-            float: left;
-            border: solid 1px #999;
-            background: #eee;
-            height: 50px;
-            margin: 10px;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-        }
+        
         .div1 {
             width: calc(50% - 20px);
             width: -moz-calc(50% - 20px);
