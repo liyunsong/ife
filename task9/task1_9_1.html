@@ -24,15 +24,7 @@
         overflow: auto;
     }
     
-    header img {
-        position: absolute;
-        height: 60px;
-        margin-left: 2%;
-        border: 0px;
-        height: 60px;
-    }
-    
-    header>div {
+    #headerRight {
         position: absolute;
         height: 58px;
         right: 40px;
@@ -43,25 +35,36 @@
         -webkit-box-sizing: border-box;
     }
     
-    #divFind {
+    .findInput {
         position: absolute;
         left: 0px;
-        width: 140px;
-        background: #fff;
-        height: 30px;
-        border-radius: 30px;
-        background: url("../images/find.png");
-        background-size: 30px;
-        background-repeat: no-repeat;
-    }
-    
-    #findInput {
-        position: absolute;
-        left: 30px;
         height: 30px;
         width: 180px;
         border: 0px;
-        border-radius: 0 50px 50px 0;
+        outline: 0px;
+        padding-left: 30px;
+        background-image: url("../images/find.png");
+        background-color: #fff;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        transition: 0.8s;
+    }
+    
+    .findFouces {
+        position: absolute;
+        height: 30px;
+        left: -50px;
+        width: 230px;
+        outline: 0px;
+        border: 0px;
+        padding-left: 30px;
+        background-image: url("../images/find.png");
+        background-color: #fff;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        transition: 0.5s;
     }
     
     .btnlogin {
@@ -85,43 +88,127 @@
         left: 260px;
     }
     
-    #leftNav {
+    .leftdivVisiable {
         position: absolute;
         left: 0px;
         top: 60px;
         bottom: 0px;
-        width: 20%;
+        width: 301px;
+        box-shadow: 2px 0px 3px #000;
         background: #2b2e3d;
+        transition: 0.6s;
+        z-index: 100;
     }
     
-    #Content {
+    .leftdivHidden {
         position: absolute;
-        right: 0px;
+        left: -300px;
         top: 60px;
         bottom: 0px;
-        width: 80%;
-        background: #dedede;
+        width: 300px;
+        background: #2b2e3d;
+        transition: 0.6s;
+        z-index: 100;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .leftdivHidden,
+        .leftdivVisiable,
+        .leftNav {
+            position: absolute;
+            left: 0px;
+            top: 60px;
+            bottom: 0px;
+            width: 20%;
+            box-shadow: 2px 1px 5px #fff;
+            background: #2b2e3d;
+        }
+        .logo {
+            position: absolute;
+            height: 50px;
+            top: 5px;
+            width: 50px;
+            margin-left: 2%;
+            border: 0px;
+            background-image: url('../images/login.png');
+            background-size: 50px 50px;
+        }
+        #Content {
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            bottom: 0px;
+            width: 80%;
+            background: #dedede;
+            transition: 0.6s;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .leftNav {
+            position: absolute;
+            left: -300px;
+            top: 60px;
+            bottom: 0px;
+            width: 300px;
+            background: #2b2e3d;
+        }
+        .logo {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 5px;
+            left: 3%;
+            border: 0px;
+            background-image: url('../images/menu.bmp');
+            background-size: 50px 50px;
+        }
+        #Content {
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            bottom: 0px;
+            width: 100%;
+            background: #dedede;
+        }
     }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="../images/login.png">
-        <div>
+        <div class="logo"></div>
+        <div id="headerRight">
+            <input class="findInput" type="text" onfocus="this.className='findFouces'" onblur="this.className='findInput'" />
             <input class="btnlogin" type="button">
-            <div id="divFind">
-                <input id="findInput" type="text" />
-            </div>
             <label>登录</label>
         </div>
     </header>
-    <div id="leftNav">
-    	<div>
-    		
-    	</div>
+    <div class="leftNav">
+        <div>
+        </div>
     </div>
     <div id="Content"></div>
 </body>
+<script type="text/javascript">
+!(function() {
+    var logo = document.getElementsByClassName('logo')[0];
+    var leftdiv = document.getElementsByClassName('leftNav')[0];
+
+    //logo.onclick
+    logo.onclick = (function() {
+        var fn = function() {
+            if (document.body.clientWidth <= 768) {
+                if (leftdiv.clientWidth <= 300) {
+                    leftdiv.className = "leftdivVisiable";
+                } else {
+                    leftdiv.className = "leftdivHidden";
+                }
+            }
+        };
+        return fn;
+    })();
+})();
+</script>
 
 </html>
