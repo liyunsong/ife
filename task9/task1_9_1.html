@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>任务九：第一阶段</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        border: 0px;
+    }
+    
+    header {
+        position: relative;
+        width: 100%;
+        min-width: 600px;
+        height: 60px;
+        border: 0px;
+        background: #2189C0;
+        overflow: auto;
+    }
+    
+    #headerRight {
+        position: absolute;
+        height: 58px;
+        right: 40px;
+        padding: 15px 0px;
+        width: 380px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    .findInput {
+        position: absolute;
+        left: 0px;
+        height: 30px;
+        width: 180px;
+        border: 0px;
+        outline: 0px;
+        padding-left: 30px;
+        background-image: url("../images/find.png");
+        background-color: #fff;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        transition: 0.8s;
+    }
+    
+    .findFouces {
+        position: absolute;
+        height: 30px;
+        left: -50px;
+        width: 230px;
+        outline: 0px;
+        border: 0px;
+        padding-left: 30px;
+        background-image: url("../images/find.png");
+        background-color: #fff;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        transition: 0.5s;
+    }
+    
+    .btnlogin {
+        position: absolute;
+        left: 220px;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+        border: 0px;
+        padding: 0px;
+        background: url("../images/login.png");
+        background-size: 40px;
+    }
+    
+    header>div>label {
+        position: absolute;
+        top: 20px;
+        color: #fff;
+        font-weight: bold;
+        width: 40px;
+        left: 260px;
+    }
+    
+    .leftdivVisiable {
+        position: absolute;
+        left: 0px;
+        top: 60px;
+        bottom: 0px;
+        width: 301px;
+        box-shadow: 2px 0px 3px #000;
+        background: #2b2e3d;
+        transition: 0.6s;
+        z-index: 100;
+    }
+    
+    .leftdivHidden {
+        position: absolute;
+        left: -300px;
+        top: 60px;
+        bottom: 0px;
+        width: 300px;
+        background: #2b2e3d;
+        transition: 0.6s;
+        z-index: 100;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .leftdivHidden,
+        .leftdivVisiable,
+        .leftNav {
+            position: absolute;
+            left: 0px;
+            top: 60px;
+            bottom: 0px;
+            width: 20%;
+            box-shadow: 2px 1px 5px #fff;
+            background: #2b2e3d;
+        }
+        .logo {
+            position: absolute;
+            height: 50px;
+            top: 5px;
+            width: 50px;
+            margin-left: 2%;
+            border: 0px;
+            background-image: url('../images/login.png');
+            background-size: 50px 50px;
+        }
+        #Content {
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            bottom: 0px;
+            width: 80%;
+            background: #dedede;
+            transition: 0.6s;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .leftNav {
+            position: absolute;
+            left: -300px;
+            top: 60px;
+            bottom: 0px;
+            width: 300px;
+            background: #2b2e3d;
+        }
+        .logo {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 5px;
+            left: 3%;
+            border: 0px;
+            background-image: url('../images/menu.bmp');
+            background-size: 50px 50px;
+        }
+        #Content {
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            bottom: 0px;
+            width: 100%;
+            background: #dedede;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <div id="headerRight">
+            <input class="findInput" type="text" onfocus="this.className='findFouces'" onblur="this.className='findInput'" />
+            <input class="btnlogin" type="button">
+            <label>登录</label>
+        </div>
+    </header>
+    <div class="leftNav">
+        <div>
+        </div>
+    </div>
+    <div id="Content"></div>
+</body>
+<script type="text/javascript">
+!(function() {
+    var logo = document.getElementsByClassName('logo')[0];
+    var leftdiv = document.getElementsByClassName('leftNav')[0];
+
+    //logo.onclick
+    logo.onclick = (function() {
+        var fn = function() {
+            if (document.body.clientWidth <= 768) {
+                if (leftdiv.clientWidth <= 300) {
+                    leftdiv.className = "leftdivVisiable";
+                } else {
+                    leftdiv.className = "leftdivHidden";
+                }
+            }
+        };
+        return fn;
+    })();
+})();
+</script>
+
+</html>

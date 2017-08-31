@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../CSS/task1_8_1.css" media="">
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        margin: 0px 10px;
+    }
+    div {
+            float: left;
+            border: solid 1px #999;
+            background: #eee;
+            height: 50px;
+            margin: 10px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+    /*
+        了解12栏布局之后才恍然大悟。
+        12栏布局（把可用宽度平均划分为12等份，则一个栏的单位是总宽度/12）
+        假设需要响应式布局的宽度为W，总剩余宽度：W2（间距：margin等）
+        如果按比例计算一个占有一栏DIV的宽度则是：W/12-W2/12
+        这个页面布局中W=100%；W2=x*20px;
+        x为一行中有几个DIV；20px 是DIV的margin：为10px,body的margin为10px;
+        开始工作了。
+    */
+    @media screen and (min-width: 769px) {
+        
+        .div1 {
+            width: calc(33.33% - 20px);
+            width: -moz-calc(33.33% - 20px);
+            width: -webkit-calc(33.33% - 20px);
+        }
+        .div2 {
+            width: calc(33.33% - 20px);
+            width: -moz-calc(33.33% - 20px);
+            width: -webkit-calc(33.33% - 20px);
+        }
+        .div3 {
+            width: calc(33.33% - 20px);
+            width: -moz-calc(33.33% - 20px);
+            width: -webkit-calc(33.33% - 20px);
+        }
+        .div4 {
+            width: calc(25% - 15px);
+            width: -moz-calc(25% - 15px);
+            width: -webkit-calc(25% - 15px);
+        }
+        .div5 {
+            width: calc(50% - 30px);
+            width: -moz-calc(50% - 30px);
+            width: -webkit-calc(50% - 30px);
+        }
+        .div6 {
+            width: calc(25% - 15px);
+            width: -moz-calc(25% - 15px);
+            width: -webkit-calc(25% - 15px);
+        }
+        .div7 {
+            width: calc(8.33% - 8px);
+            width: -moz-calc(8.33% - 8px);
+            width: -webkit-calc(8.33% - 8px);
+        }
+        .div8 {
+            width: calc(8.33% - 8px);
+            width: -moz-calc(8.33% - 8px);
+            width: -webkit-calc(8.33% - 8px);
+        }
+        .div9 {
+            width: calc(16.66% - 16px);
+            width: -moz-calc(16.66% - 16px);
+            width: -webkit-calc(16.66% - 16px);
+        }
+        .div10 {
+            width: calc(16.66% - 16px);
+            width: -moz-calc(16.66% - 16px);
+            width: -webkit-calc(16.66% - 16px);
+        }
+        .div11 {
+            width: calc(50% - 52px);
+            width: -moz-calc(50% - 52px);
+            width: -webkit-calc(50% - 52px);
+        }
+    }
+    
+    @media screen and (max-width: 769px) {
+        
+        .div1 {
+            width: calc(50% - 20px);
+            width: -moz-calc(50% - 20px);
+            width: -webkit-calc(50% - 20px);
+        }
+        .div2 {
+            width: calc(50% - 20px);
+            width: -moz-calc(50% - 20px);
+            width: -webkit-calc(50% - 20px);
+        }
+        .div3 {
+            width: calc(100% - 20px);
+            width: -moz-calc(100% - 20px);
+            width: -webkit-calc(100% - 20px);
+        }
+        .div4 {
+            width: calc(25% - 15px);
+            width: -moz-calc(25% - 15px);
+            width: -webkit-calc(25% - 15px);
+        }
+        .div5 {
+            width: calc(50% - 30px);
+            width: -moz-calc(50% - 30px);
+            width: -webkit-calc(50% - 30px);
+        }
+        .div6 {
+            width: calc(25% - 15px);
+            width: -moz-calc(25% - 15px);
+            width: -webkit-calc(25% - 15px);
+        }
+        .div7 {
+            width: calc(16.66% - 10px);
+            width: -moz-calc(16.66% - 10px);
+            width: -webkit-calc(16.66% - 10px);
+        }
+        .div8 {
+            width: calc(16.66% - 10px);
+            width: -moz-calc(16.66% - 10px);
+            width: -webkit-calc(16.66% - 10px);
+        }
+        .div9 {
+            width: calc(66.66% - 40px);
+            width: -moz-calc(66.66% - 40px);
+            width: -webkit-calc(66.66% - 40px);
+        }
+        .div10 {
+            width: calc(33.33% - 20px);
+            width: -moz-calc(33.33% - 20px);
+            width: -webkit-calc(33.33% - 20px);
+        }
+        .div11 {
+            width: calc(33.33% - 20px);
+            width: -moz-calc(33.33% - 20px);
+            width: -webkit-calc(33.33% - 20px);
+        }
+    }
+    </style>
+</head>
+
+<body>
+</body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+<div class="div7"></div>
+<div class="div8"></div>
+<div class="div9"></div>
+<div class="div10"></div>
+<div class="div11"></div>
+
+</html>
